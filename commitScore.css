@@ -1,0 +1,37 @@
+.heading {
+    text-align: center;
+}
+
+.form {
+    text-align: right;
+}
+
+.btn {
+    color: #ffffff;
+    background-color: #228B22;
+    border-color: #228B22;
+    cursor: pointer;
+}
+
+.errorMessage {
+    color: #ff0000;
+    text-align: center;
+    margin: 10px 0;
+    height: 10px;
+}
+
+.metrics {
+    color: #ffffff;
+    background-color: #000000;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+}
+
+.title {
+    margin-left: 15px;
+}
+
+#metrics-wrapper {
+    visibility: hidden;
+}

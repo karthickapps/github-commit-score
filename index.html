@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Github Commit Score</title>
+    <script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
+    <script type="text/javascript" src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script type="text/javascript" src="./commitScore.js"></script>
+    <link rel="stylesheet" type="text/css" href="./commitScore.css" />
+</head>
+
+<body>
+    <h1 class="heading">Github commit score</h1>
+    <div class="content">
+        <div class="form">
+            <form onsubmit="return false;">
+                <input type="text" id="username" placeholder="Github username" />
+                <input type="submit" onclick="getCommitStatus()" value="Get commit status" class="btn">
+            </form>
+        </div>
+        <div id="errorMessage" class="errorMessage"> </div>
+        <div id="metrics-wrapper">
+            <div id="metrics" class="metrics">
+                <span class="title">Total:</span>
+                <span id="total">0</span>
+                <span class="title">Additions:</span>
+                <span id="additions">0</span>
+                <span class="title">Deletions:</span>
+                <span id="deletions">0</span>
+                <span class="title">No of files:</span>
+                <span id="noOfFiles">0</span>
+            </div>
+            <div id="container"></div>
+        </div>
+    </div>
+</body>
+
+</html>
